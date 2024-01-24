@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@500&family=Space+Mono:wght@700&display=swap");
+
+html {
+  font-size: 10px;
+}
+body {
+  font-family: Hanken Grotesk, sans-serif;
+}
+.result-summary {
+  max-width: 736px;
+  margin: auto;
+  background: white;
+}
+.result {
+  background: linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%);
+  padding-top: 24px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0px 0px 32px 32px;
+}
+.result h2 {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  color: #cac9ff;
+}
+.result .point {
+  background: linear-gradient(
+    180deg,
+    #4d21c9 0%,
+    rgba(37, 33, 201, 0) 100%,
+    rgba(37, 33, 201, 0) 100%
+  );
+  width: 140px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50%;
+  padding: 25px 39px 22px 38px;
+  margin-top: 24px;
+}
+.result .point .big {
+  text-align: center;
+  font-size: 5.6rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 72px;
+  color: #fff;
+}
+.result .point .small {
+  font-size: 1.6rem;
+  opacity: 0.5168;
+  font-weight: 700;
+  line-height: 5px;
+  color: #cac9ff;
+}
+.result h3 {
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #fff;
+  margin-top: 24px;
+}
+.result .details {
+  width: 260px;
+  color: #cac9ff;
+  text-align: center;
+  margin-top: 8px;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.summary {
+  padding: 24px 30px 30px;
+}
+.summary h2 {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #303b59;
+}
+.summary .wrapper {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.common {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  padding: 17px 16px 18px 16px;
+}
+.common h3 {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.common p {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #303b59;
+}
+.common p span {
+  opacity: 0.5;
+}
+.flex-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.reaction {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #f55;
+}
+.reaction h3 {
+  color: rgba(255, 85, 85, 1);
+}
+.memory {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #ffb21e;
+}
+.memory h3 {
+  color: rgba(255, 178, 30, 1);
+}
+.verbal {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #00bb8f;
+}
+.verbal h3 {
+  color: rgba(0, 187, 143, 1);
+}
+.visual {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #1125d6;
+}
+.visual h3 {
+  color: rgba(17, 37, 214, 1);
+}
+button {
+  width: 100%;
+  height: 56px;
+  margin-top: 24px;
+  border-radius: 128px;
+  background: #303b59;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #fff;
+  border: none;
+  font-family: Hanken Grotesk;
+}
+button:active {
+  background: linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%);
+  cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+  body {
+    background: #ecf2ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .result-summary {
+    display: flex;
+    border-radius: 32px;
+  }
+  .result {
+    border-radius: 32px;
+    padding: 38px 54px 55px 54px;
+  }
+  .result h2 {
+    font-size: 2.4rem;
+  }
+  .result .point .big {
+    font-size: 7.2rem;
+  }
+  .result .point .small {
+    font-size: 1.8rem;
+  }
+  .result .details {
+    width: 260px;
+    font-size: 1.8rem;
+  }
+  .result h3 {
+    font-size: 3.2rem;
+    margin-top: 28px;
+  }
+  .common {
+    width: 288px;
+  }
+  .summary h2 {
+    font-size: 2.4rem;
+  }
+  .common h3,
+  .common p {
+    font-size: 1.8rem;
+  }
+  button:hover {
+    background: linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%);
+    cursor: pointer;
+  }
+}
